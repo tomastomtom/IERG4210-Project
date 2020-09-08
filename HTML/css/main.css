@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,500|Oxygen:300,400,700');
+
+body{
+    /* Limiting the width and height of the webpage to be static*/
+    width: 1500px;
+    margin: 0px;
+    padding: 0px;
+    height: 756px;
+}
+
+header{
+  height: 12.5%;
+}
+
+#mainHeader{
+  height: 77%;
+  text-align: center;
+}
+
+#shopIcon{
+  font-family: 'Dosis', sans-serif;
+  font-weight: 200;
+  font-size: 2.5em;
+  user-select: none;
+  display: inline-block;
+  float: left;
+}
+
+#tabList{
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 400;
+  font-size: 1.7em;
+  text-align: : center;
+  display: inline-block;
+  margin-top: 0.41em;
+}
+
+span#tabList ul{
+  text-align: center;
+  display: inline;
+
+}
+
+span#tabList ul li{
+  display: inline;
+  margin-left: 2.1em;
+}
+
+.tabListLinks{
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.tabListLinks::after{
+  content: '';
+  display: block;
+  width: 0%;
+  height: 0.15em;
+  background: #000000;
+  transition: width 175ms ease;
+}
+
+.tabListLinks:hover::after {
+    width: 100%;
+}
+
+.icons{
+  margin-top: 0.7em;
+  position: relative;
+}
+
+div.icons img.headerIcon{
+  height: 2.2em;
+}
+
+
+#shoppingCart{
+  display: inline-block;
+  float: right;
+}
+
+#cartList{
+  position: absolute;
+  display: hidden;
+  left:-23.2em;
+  width:25em;
+  height:30em;
+  margin-top: 0.3em;
+  background-color: #ffffff;
+  z-index: 1000;
+  border: 4px solid #000000;
+  transform: scale(1,0);
+  transform-origin: 100% 0%;
+  transition: 500ms;
+}
+
+div#shoppingCart:hover > #cartList{
+  transform: scale(1,1);
+}
+
+.button{
+  position: absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  display: inline-block;
+  border: none;
+  background-color: #404040;
+  color: #ffffff;
+  font-family: 'Oxygen',sans-serif;
+  margin-top: 1em;
+  cursor: pointer;
+  text-align: center;
+  transition: background 200ms ease-in-out,
+              box-shadow 150ms ease-in-out,
+              margin 75ms ease;
+}
+
+.button:hover {
+    background: #000000;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.button:active {
+  margin-top: 1.1em;
+  box-shadow: none;
+}
+.cartItem{
+  display: block;
+  position: absolute;
+  width: inherit;
+  font-family: 'Oxygen',sans-serif;
+  text-align: left;
+  border-bottom-width: 2px;
+  border-bottom-style: groove;
+}
+.cartItemsPic{
+  width:26%;
+  float: left;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-right: 2px solid;
+  display: inline-block;
+}
+
+.cartItemsPic img{
+  width: 100%;
+}
+
+span.cartItemsName{
+  padding-left: 3%;
+  width:40%;
+  display:inline-block;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+span.cartItemPrice{
+  position: absolute;
+  top: 90px;
+  right:2%;
+  display: inline-block;
+  float: right;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+#checkOut{
+  position: absolute;
+  width: inherit;
+  top:75%;
+  padding-top: 0.5em;
+}
+#checkOut button.button{
+  font-size: 1.8em;
+  font-weight: 400;
+  padding-left: 2.1em;
+  padding-right:2.1em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+
+  outline: 4px solid #ffffff;
+  outline-offset: -8px;
+}
+
+
+
+#personal{
+  display: inline-block;
+  float: right;
+  margin-right: 2em;
+}
+
+#navbar{
+  height: 27%;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-style: italic;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  padding-top: 0.2em;
+}
+
+#navbar a{
+  color: inherit;
+}
+
+#Intro{
+  font-family: 'Oxygen',sans-serif;
+}
+
+div#Intro h1{
+  text-align: center;
+  font-size: 4.5em;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  margin-bottom: 0.05em;
+}
+
+div#Intro p{
+  font-size: 1.5em;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 4.5em;
+}
+div#productsList{
+  margin-top: 3em;
+  text-align: center;
+  font-family: 'Oxygen',sans-serif;
+}
+.listRow{
+  display: inline-block;
+  text-align: center;
+  width: 85%;
+
+}
+.listItemL{
+  float: left;
+}
+
+.listItemR{
+  float: right;
+}
+
+.listItemNull{
+  min-height: 1px;
+  display: inline-block;
+  min-width: 28%;
+}
+
+.listItem{
+  position: relative;
+  width: 28%;
+  display: inline-block;
+  border-style: solid;
+  border-width: 6px;
+  border-color: black;
+  border-bottom-style:none;
+  border-left-style: none;
+  border-right-style: none;
+  padding-top: 3em;
+  height: 620px;
+}
+
+.listItem p{
+  margin-left: 18%;
+  margin-right: 18%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.listItem a{
+  color: #000000;
+}
+
+div.imageContainer{
+  text-align: center;
+  width:250px;
+  height: 380px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+p.productType{
+  font-weight: 300;
+}
+
+p.productName{
+  font-weight: 700;
+}
+
+p.price{
+  position: absolute;
+  top:76.7%;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  display: block;
+  font-weight: 400;
+  font-size: 1.3em
+}
+
+.addToCart {
+    top:80%;
+    font-size: 1.4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.35em;
+    padding-bottom: 0.35em;
+    font-weight: 700;
+    outline: 2px solid #ffffff;
+    outline-offset: -4px;
+}
+
+footer{
+  margin-top: 5%;
+  width: 100%
+  height: 13%;
+  background-color: #a6a6a6;
+  font-family: 'Dosis', sans-serif;
+  padding-right: 2em;
+  text-align: right;
+}
+
+footer h5{
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom:0.5em;
+}
+footer p{
+  font-size: 1.3em;
+  font-weight: 300;
+  margin-top: 0.7em;
+}
+
+footer b{
+  font-weight: 500;
+}

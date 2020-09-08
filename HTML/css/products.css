@@ -1,0 +1,51 @@
+#productContainer{
+  position: relative;
+  width: 100%;
+  margin-top: 5%;
+}
+#mainProductPic{
+  display: inline-block;
+  position: relative;
+  margin-left: 8%;
+  margin-right: 4%;
+  width: 33%;
+}
+#mainProductPic img{
+  width: 100%;
+}
+#mainProductContent{
+  font-family: 'Oxygen',sans-serif;
+  display: inline-block;
+  position: absolute;
+  width: 40%;
+}
+
+#mainProductContent h1{
+  font-size: 4em;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+#mainProductContent h3{
+  font-weight: 400;
+  font-size: 2.7em;
+  margin-top: 0.5em;
+  margin-bottom: 0.3em;
+}
+
+#mainProductContent p{
+  font-weight: 300;
+  font-size: 1.4em;
+  margin-bottom: 1.5em;
+}
+
+button.productPageCart{
+  font-weight: 700;
+  font-size: 2.5em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  padding-top: 0.5em ;
+  padding-bottom: 0.5em;
+  outline: 4px solid #ffffff;
+  outline-offset: -10px;
+}
